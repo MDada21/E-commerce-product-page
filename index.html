@@ -9,6 +9,9 @@
   <body>
     <nav id="nav--desktop">
       <div class="nav-container">
+        <div class="menu-icon">
+          <img src="/E-commerce-product-page/images/icon-menu.svg" onclick="showslider()" class="icon-menu" alt="">
+        </div>
         <div class="nav-logo">
           <img
             src="./E-commerce-product-page/images/logo.svg"
@@ -16,6 +19,7 @@
             alt="logo"
           />
         </div>
+        
         <div class="nav--links">
           <ul>
             <li><a href="#Collections">Collections</a></li>
@@ -24,23 +28,91 @@
             <li><a href="#About">About</a></li>
             <li><a href="#Contact">Contact</a></li>
           </ul>
-        </div></div>
-        <div class="navleft">
-        <div class="cart">
+        </div>
+      </div>
+      <div class="navleft">
+        <div class="cart" onclick="activeCart()" >
           <img
             src="./E-commerce-product-page/images/icon-cart.svg"
-            class="cart"
-            alt="cart"
+            
+            alt="cart-img"
           />
+          <div class="number-cart">0</div>
+          
         </div>
+        <div class="nav-cart active">
+         <div class="cart-title"> <h4>Cart</h4></div><hr class="hr-cart">
+          <div class="cart-details">
+
+             
+           
+            
+          </div><div class="btn-chekout"><button  onclick="disableCart()" class="chekout">Checkout</button></div>
+        </div>
+
         <div class="profil-pic">
           <img
             src="./E-commerce-product-page/images/image-avatar.png"
             class="image-avatar"
             alt="profil picture"
           />
-        </div></div>
+        </div>
       </div>
-    </nav><hr>
+      <hr>
+    </nav>
+    
+    <!-- <hr /> -->
+    <nav class="hamburger-menu">
+       
+        <div class="menu--links">
+          <ul>
+            <img src="/E-commerce-product-page/images/icon-close.svg" onclick="hideslider()" class="icon-close" alt="">
+            <li><a href="#Collections">Collections</a></li>
+            <li><a href="#Men">Men</a></li>
+            <li><a href="#Women">Women</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+     
+    </nav>
+
+    <section id="profil">
+      <div class="images">
+        <img src="/E-commerce-product-page/images/image-product-1-thumbnail.jpg" class="image-thumbnail" alt="">
+       <div class="images-choice"><img src="/E-commerce-product-page/images/image-product-1.jpg" class="image-product" alt="">
+       <img src="/E-commerce-product-page/images/image-product-2.jpg" class="image-product" alt="">
+       <img src="/E-commerce-product-page/images/image-product-3.jpg" class="image-product" alt="">
+       <img src="/E-commerce-product-page/images/image-product-4.jpg" class="image-product" alt=""> </div>
+      </div>
+      <div class="profil-text">
+        <div class="text-titles"><h5 class="company-title">SNEAKERS COMPANY</h5>
+        <H2 class="second-title">Fall Limite Sneakers</H2></div>
+        <p class="para">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="price">
+          <h3 class="basePrice"> $125.00 <span class="percentage">50%</span></h3>
+          <p><s>$250.00</s></p>
+        </div>
+      
+        
+      <div class="botton-container">
+        <div class="plus-minus"><div class="btn-1" onclick="plusNum()">
+<img src="/E-commerce-product-page/images/icon-plus.svg" alt="">
+        </div>
+        <div class="sum">0</div>
+        <div class="btn-2" onclick="minusNum()">
+          <img src="/E-commerce-product-page/images/icon-minus.svg" alt="">
+        </div></div>
+        <div class="add-to-cart" onclick="Update()">
+          <button><img src="./E-commerce-product-page/images/icon-cart.svg" alt=""> Add To Cart</button>
+        </div>
+      </div></div>
+    </section>
+    
+    <script src="script.js"></script>
   </body>
 </html>
